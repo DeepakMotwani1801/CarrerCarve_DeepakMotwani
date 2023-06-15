@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Resume Section Manager</title>
+  <link rel="stylesheet" href="DeepakMotwani.css">
+</head>
+
+<body>
+  <h1>Select your sections</h1>
+
+  <ul class="section-list">
+
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section provides a summary of your professional profile.
+      </div>
+      <!-- <button type="button" class="description-button btn btn-default btn-sm">Description</button> -->
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Profile Summary</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section highlights your achievements outside of academics or work.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+      <span class="section-name">Cocurricular Achievements</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section showcases your experience gained during summer internships.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+      <span class="section-name">Summer Internship Experience</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section presents your professional work experience.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Work Experience</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section showcases your notable projects.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Projects</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section lists your certifications and achievements.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Certifications</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section highlights your leadership roles and responsibilities.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Leadership Positions</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section showcases your involvement in extracurricular activities.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Extracurricular</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+    <li draggable="true">
+      <div class="menu-icon"></div>
+      <div class="description">
+        This section displays your educational background.
+      </div>
+      <button type="button" style="font-size:24px" class="description-button btn btn-default btn-sm"
+        data-toggle="tooltip" data-placement="top" title="Description"><i class="fa fa-info-circle"></i></button>
+
+      <span class="section-name">Education</span>
+
+      <div class="ET">
+        <button type="button" class="btn btn-default btn-sm edit">
+          <span class="glyphicon glyphicon-pencil"></span></button>
+        <!-- Rounded switch -->
+        <label class="toggle">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="toggle-slider">
+            <span class="toggle-icon"></span>
+          </span>
+        </label>
+      </div>
+
+    </li>
+  </ul>
+
+
+  <button class="save-button" disabled>Save and Next</button>
+
+
+  <script>
+    // JavaScript code for the page
+    const sectionList = document.querySelector('.section-list');
+    const saveButton = document.querySelector('.save-button');
+    let hasChanges = false; // Variable to track changes
+
+    // Enable drag and drop functionality
+    let dragSrcElement = null;
+
+    function handleDragStart(e) {
+      dragSrcElement = this;
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/html', this.innerHTML);
+      this.classList.add('dragging');
+      hasChanges = true; // Update changes status
+    }
+
+    function handleDragOver(e) {
+      if (e.preventDefault) {
+        e.preventDefault(); // Necessary to allow dropping
+      }
+
+      this.classList.add('over');
+      e.dataTransfer.dropEffect = 'move';
+
+      return false;
+    }
+
+    function handleDragLeave() {
+      this.classList.remove('over');
+    }
+
+    function handleDrop(e) {
+      if (e.stopPropagation) {
+        e.stopPropagation(); // Stops browser from redirecting
+      }
+
+      if (dragSrcElement !== this) {
+        const list = this.parentNode;
+        const sections = list.querySelectorAll('li');
+        const draggedIndex = Array.from(sections).indexOf(dragSrcElement);
+        const dropIndex = Array.from(sections).indexOf(this);
+
+        // Remove the dragged element from its current position
+        list.removeChild(dragSrcElement);
+
+        // Insert the dragged element at the drop position
+        if (draggedIndex < dropIndex) {
+          list.insertBefore(dragSrcElement, this.nextSibling);
+        } else {
+          list.insertBefore(dragSrcElement, this);
+        }
+
+        hasChanges = true; // Update changes status
+      }
+
+      return false;
+    }
+
+    function handleDragEnd() {
+      this.classList.remove('over');
+      this.classList.remove('dragging');
+    }
+
+    const sectionItems = document.querySelectorAll('.section-list li');
+    sectionItems.forEach(function (item) {
+      item.addEventListener('dragstart', handleDragStart, false);
+      item.addEventListener('dragover', handleDragOver, false);
+      item.addEventListener('dragleave', handleDragLeave, false);
+      item.addEventListener('drop', handleDrop, false);
+      item.addEventListener('dragend', handleDragEnd, false);
+    });
+
+    // Enable section toggling
+    function toggleSection() {
+      const section = this.parentNode;
+      section.classList.toggle('disabled');
+      hasChanges = true; // Update changes status
+      enableSaveButton(); // Call enableSaveButton() to update the save button status
+    }
+
+    const toggleButtons = document.querySelectorAll('.toggle-checkbox');
+    toggleButtons.forEach(function (button) {
+      button.addEventListener('change', toggleSection); // Update the event from 'click' to 'change'
+    });
+    // Enable section editing
+    function editSection() {
+      const section = this.parentNode.parentNode; // Get the parent li element
+      const sectionName = section.querySelector('.section-name');
+      const input = document.createElement('input');
+      input.value = sectionName.textContent;
+      input.classList.add('section-name-input');
+      sectionName.textContent = '';
+      sectionName.appendChild(input);
+
+      // Set background color of other sections to grey
+      const sectionItems = document.querySelectorAll('.section-list li');
+      sectionItems.forEach(function (item) {
+        if (item !== section) {
+          item.style.backgroundColor = '#B6B6B6';
+        }
+      });
+
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          sectionName.textContent = input.value;
+
+          // Reset background color of other sections
+          sectionItems.forEach(function (item) {
+            item.style.backgroundColor = ''; // Reset background color of all sections
+          });
+
+          // Check if any changes were made
+          saveButton.disabled = false;
+        }
+      });
+
+      input.focus();
+    }
+    const editButtons = document.querySelectorAll('.edit');
+    editButtons.forEach(function (button) {
+      button.addEventListener('click', editSection);
+    });
+
+    // Enable description visibility
+    function showDescription() {
+      const description = this.parentNode.querySelector('.description');
+      description.style.display = 'block';
+    }
+
+    function hideDescription() {
+      const description = this.parentNode.querySelector('.description');
+      description.style.display = 'none';
+    }
+
+    const descriptionButtons = document.querySelectorAll('.description-button');
+    descriptionButtons.forEach(function (button) {
+      button.addEventListener('mouseenter', showDescription);
+      button.addEventListener('mouseleave', hideDescription);
+    });
+
+    const toggleCheckbox = document.querySelector('.toggle-checkbox');
+
+    toggleCheckbox.addEventListener('change', function () {
+      const toggleIcon = this.nextElementSibling.querySelector('.toggle-icon');
+
+      if (this.checked) {
+        toggleIcon.style.backgroundColor = '#381E72';
+      } else {
+        toggleIcon.style.backgroundColor = 'gray';
+      }
+
+      hasChanges = true; // Update changes status
+    });
+
+    // Enable save button based on changes
+    function enableSaveButton() {
+      saveButton.disabled = !hasChanges;
+    }
+
+    // Call enableSaveButton() whenever a change occurs
+    sectionList.addEventListener('input', enableSaveButton);
+    sectionList.addEventListener('dragend', enableSaveButton);
+    toggleButtons.forEach(function (button) {
+      button.addEventListener('click', enableSaveButton);
+    });
+    editButtons.forEach(function (button) {
+      button.addEventListener('click', enableSaveButton);
+    });
+    descriptionButtons.forEach(function (button) {
+      button.addEventListener('mouseenter', enableSaveButton);
+      button.addEventListener('mouseleave', enableSaveButton);
+    });
+    toggleCheckbox.addEventListener('change', enableSaveButton);
+  </script>
+
+
+
+</body>
+
+</html>
