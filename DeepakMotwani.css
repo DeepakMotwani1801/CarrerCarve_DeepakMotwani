@@ -1,0 +1,282 @@
+/* CSS styles for the page */
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-color: inherit;
+  size: 50px;
+}
+
+.btn-group-sm > .btn,
+.btn-sm {
+  padding: 4px 10px;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.section-list {
+  list-style-type: none;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.section-name {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.menu-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url(Vector.png);
+  background-size: cover;
+  margin-right: 0px;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.description {
+  display: none;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #f3f3f3;
+  background-color: #f9f9f9;
+  position: absolute;
+  z-index: 1;
+}
+
+.section-list li:hover .description-button + .description {
+  display: block;
+}
+
+.section-list li {
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: move;
+}
+
+.section-list li:hover .description {
+  display: none;
+}
+
+
+.section-list li.placeholder {
+  background-color: #ddd;
+  border: 1px dashed #aaa;
+  height: 40px;
+}
+
+.save-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  background-color: #8A4893;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 10px;
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.save-button h6 {
+  width: 116px;
+  height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 1px;
+  bottom: 3px;
+  background-image: url("tick.png");
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background: #381E72;
+}
+
+input:checked + .slider {
+  background: #D0BCFF;;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.save-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Updated styles for edit and toggle buttons */
+.section-list li > div.ET,
+.section-list li > button {
+  display: flex;
+  align-items: center;
+}
+
+.section-list li > div.ET {
+  margin-left: auto;
+}
+
+.section-list li > button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.toggle {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.4s, border-color 0.4s;
+  border: 1px solid #8B8B8B;
+  box-shadow: 0 0 0 1px #8B8B8B;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translate(0, -50%);
+  width: 26px;
+  height: 26px;
+  background-color: gray;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s, background-color 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-slider {
+  background-color: #D0BCFF;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.toggle-checkbox:checked + .toggle-slider .toggle-icon {
+  transform: translate(26px, -50%);
+  background-color: #381E72;
+}
+
+.toggle-checkbox:checked + .toggle-slider .toggle-icon::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("tick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.toggle-checkbox + .toggle-slider .toggle-icon::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
